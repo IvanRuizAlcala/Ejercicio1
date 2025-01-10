@@ -4,15 +4,20 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AComponent } from './a/a.component';
+import { SegundoComponent } from './segundo/segundo/segundo.component';
+import { FormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    AComponent
+    AComponent,
+    SegundoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, FormsModule
   ],
   providers: [
     provideClientHydration(withEventReplay())

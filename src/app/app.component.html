@@ -1,4 +1,23 @@
-<h1>primera pagina</h1>
-<h2>hola soy santi</h2>
-<h3>{{title}}</h3>
-<app-a></app-a>
+<label>campo</label>
+<div>
+<div>
+  <input type="text" value ="escribe algo">
+</div>
+<label>campo 2</label>
+<div>
+  <input type="button" value="aprietame">
+  <input type="button" value="pulsame" (click)= 'pista ="la mando desde el html"'>
+</div>
+</div>
+<div>
+
+  <input type="text" [value] = "pista" />
+  <img src="imagen.png" width="50%">
+
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="banana"/>
+    <br>
+    <h3>este es el valor que ahora tiene la variable banana {{banana}}</h3>
+    <label>{{banana}}</label>
+  </div>

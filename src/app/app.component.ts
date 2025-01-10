@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Ejercicio1';
+  public pista=" escribir un dato X"
+  public banana="por defecto"
 }
